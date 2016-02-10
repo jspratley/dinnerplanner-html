@@ -3,41 +3,62 @@ var DinnerModel = function() {
  
 	//TODO Lab 2 implement the data structure that will hold number of guest
 	// and selected dinner options for dinner menu
+	var numberOfGuests = 0;
+	var selectedDishes = [];
 
 
 	this.setNumberOfGuests = function(num) {
-		//TODO Lab 2
+		numberOfGuests = num;
 	}
 
 	// should return 
 	this.getNumberOfGuests = function() {
-		//TODO Lab 2
+		return numberOfGuests;
 	}
 
 	//Returns the dish that is on the menu for selected type 
 	this.getSelectedDish = function(type) {
-		//TODO Lab 2
+		for (dishIndex = 0; dishIndex < selectedDishes.length; dishIndex++) {
+			if (selectedDishes[dishIndex].type.localeCompare(type) == 0) {
+				return selectedDishes[dishIndex];
+			}
+		}
 	}
 
 	//Returns all the dishes on the menu.
 	this.getFullMenu = function() {
-		//TODO Lab 2
+		return selectedDishes;
 	}
 
 	//Returns all ingredients for all the dishes on the menu.
 	this.getAllIngredients = function() {
-		//TODO Lab 2
+		allIngredients = [];
+		
+		for (dishIndex = 0; dishIndex < selectedDishes.length; dishIndex++) {
+			allIngredients.push(selectedDishes[dishIndex].ingredients);
+		}
+		
+		return allIngredients;
 	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
 	this.getTotalMenuPrice = function() {
-		//TODO Lab 2
+		priceForIngredients = 0;
+		
+		for (dishIndex = 0; dishIndex < selectedDishes.length; dishIndex++) {
+			currDishIngredients = selectedDishes[dishIndex].ingredients;
+			for (ingredientIndex = 0; ingredientIndex < currDishIngredients.length; ingredientIndex++) { 
+				priceForIngredients += currDishIngredients[ingredientIndex].cost * currDishIngredients[ingredientIndex].quantity;
+			}
+		}
+		
+		return priceForIngredients * numberOfGuests;
 	}
 
 	//Adds the passed dish to the menu. If the dish of that type already exists on the menu
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
-		//TODO Lab 2 
+		for (dishToAddIndex = 0; dishToAddIndex < 
 	}
 
 	//Removes dish from menu
