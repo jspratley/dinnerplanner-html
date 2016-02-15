@@ -12,32 +12,36 @@
 		<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 
   </head>
-  <body class="index">
-		<div class="header">
+  <body>
+		<div class="header-other">
 			<h1>HOMELETTE</h1>
 			<h4>From the best chefs in the world directly into your kitchen</h4>
-			<!--div id="exampleView">
-				<div>
-					Number of guests: <span id="numberOfGuests"></span>
-				</div>
-				<div>
-						<button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-					<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-				</div>
-			</div-->
 		</div>
 		
-		<div class="create-dinner">
-			<h3>A Home Dinner Service</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-				incididunt ut labore et dolore magna aliqua. 
-				Ut enim ad minim veniam, 
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			<div id="start">
-				<p>Start quickly</p>
-				<button id="startDinner" class="btn">Create new dinner</button>
-			</div>
+		<div class="subheader">
+			<h2>My Dinner: 4 people</h2>
+			<button class="btn">Go back and edit dinner</button>
 		</div>
+		
+		<table class="prep">
+			<tbody>
+				<tr>
+					<td><img src="images/bakedbrie.jpg"/></td>
+					<td>
+						<h3>Baked Brie</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliqua.</p>
+					</td>
+					<td>
+						<h4>Preparation</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+								ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery.js"></script>
@@ -48,6 +52,6 @@
 		<script src="js/app.js"></script>
 		<script src="js/model/dinnerModel.js"></script>
 		<script src="js/view/exampleView.js"></script>
-		<!--script src="js/view/exampleViewController.js"></script-->
+		<script src="js/view/exampleViewController.js"></script>
   </body>
 </html>

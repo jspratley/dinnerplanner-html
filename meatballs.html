@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homelette</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>
+		<div class="header-other">
+			<h1>HOMELETTE</h1>
+			<h4>From the best chefs in the world directly into your kitchen</h4>
+		</div>
+		
+		<div class="sidebar">
+			<h4>My Dinner</h4>
+			<p>People</p>
+			<input type="number" name="guests" min="1" max="10">
+			
+			<table>
+				<thead>
+					<th>Dish Name</th>
+					<th>Cost</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Pending</td>
+						<td>77.20</td>
+					</tr>
+					<tr id="last-row">
+						<td></td>
+						<td>SEK 77.20</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<button class="btn" id="confirm" disabled>Confirm Dinner</button>
+		</div>
+		
+		<div class="selected-container">
+		
+			<div class="selected">
+				<h3>Meatballs</h3>
+				<img src="images/meatballs.jpg"/>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+						incididunt ut labore et dolore</p>
+				<button class="btn">Back to Select Dish</button>
+			</div>
+			
+			<div class="ingredients">
+				<h4>INGREDIENTS FOR 4 PEOPLE</h4>
+				<br>
+				<table class="table">
+					<tbody>
+						<tr>
+							<td>2 tbsp</td><td>olive oil</td><td>SEK</td><td>0.20</td>
+						</tr>
+						<tr>
+							<td>750 g</td><td>lean beef mince</td><td>SEK</td><td>10.00</td>
+						</tr>
+						<tr>
+							<td>90 g</td><td>pack rosciutto</td><td>SEK</td><td>15.00</td>
+						</tr>
+						<tr>
+							<td>100 ml</td><td>tomato sauce</td><td>SEK</td><td>10.00</td>
+						</tr>
+						<tr>
+							<td>200 ml</td><td>hot beef stock</td><td>SEK</td><td>20.00</td>
+						</tr>
+						<tr>
+							<td>300 g</td><td>fresk pck lasagne sheets</td><td>SEK</td><td>5.00</td>
+						</tr>
+						<tr>
+							<td>125 g</td><td>ball mozzarella</td><td>SEK</td><td>12.00</td>
+						</tr>
+						<tr>
+							<td>100 ml</td><td>white sauce</td><td>SEK</td><td>5.00</td>
+						</tr>
+						<tr>
+							<td><button class="btn">Confirm Dish</button></td>
+							<td></td>
+							<td>SEK</td>
+							<td>77.20</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+			</div>
+		</div>
+		
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+		<!-- The application JavaScript code -->
+		<script src="js/app.js"></script>
+		<script src="js/model/dinnerModel.js"></script>
+		<script src="js/view/exampleView.js"></script>
+		<script src="js/view/exampleViewController.js"></script>
+		
+	</body>
+</html>

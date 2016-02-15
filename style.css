@@ -1,0 +1,227 @@
+body.index { 
+  background: url(images/family-cooking-dinner.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	height: 100%;
+}
+
+.header {
+	width: auto;
+	height: 80px;
+	background: #F6B26B;
+	border: 1px solid black;
+	opacity: 0.75;
+}
+
+.header-other {
+	width: auto;
+	height: 80px;
+	background: #EEEEEE;
+	border: 1px solid black;
+}
+
+.header h1, .header-other h1 {
+	float: left;
+	width: 200px;
+	margin-left: 50px;
+	font-family: 'Noto Sans', sans-serif;
+	font-style: bold;
+}
+
+.header h4, .header-other h4 {
+	float: right;
+	margin-top: 35px;
+	margin-right: 600px;
+	font-style: italic;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.create-dinner {
+	display: block;
+	width: 500px;
+	height: 300px;
+	margin-left: 50px;
+	margin-right: none;
+	margin-top: 100px;
+	opacity: 0.85;
+	padding: 10px;
+	background-color: white;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.btn {
+	background-color: #F6B26B;
+	border-radius: 0 !important;
+	border: 1px solid black;
+}
+
+#start {
+	margin-top: 40px;
+}
+
+.sidebar {
+	float: left;
+	width: 20%;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	height: 100%;
+	position: absolute;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.sidebar h4 {
+	padding-left: 10px;
+}
+
+.sidebar p {
+	padding-left: 10px;
+	float: left;
+	margin-right: 10px;
+}
+
+.sidebar table {
+	clear: both;
+	width: 100%;
+}
+
+.sidebar thead {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 100px;
+	background-color: #EEEEEE;
+}
+
+.sidebar th, .sidebar td {
+	padding: 10px;
+}
+
+.sidebar .btn {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#last-row {
+	border-top: 1px solid black;
+}
+
+.selection {
+	background-color: #FFE599;
+	padding: 10px;
+	font-family: 'Noto Sans', sans-serif;
+	border-bottom: 1px solid black;
+}
+
+.dish-container, .selected-container {
+	float: right;
+	width: 80%;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.dish-container table {
+	margin: 10px;
+}
+
+.dish-container table button, .dish-container table img {
+	width: 90%;
+}
+
+.selected {
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+
+.selected img {
+	width: 300px;
+	height: 300px;
+}
+
+.ingredients {
+	float: right;
+	background-color: #FFE599;
+	padding: 10px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#confirm {
+	opacity: 0.5;
+}
+
+.subheader {
+	background-color: #FFE599;
+	margin-top: none;
+	height: 75px;
+	border-bottom: 1px solid black;
+}
+
+.subheader h2 {
+	float: left;
+	margin-left: 30px;
+}
+
+.subheader button {
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.selected-courses {
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	display: block;
+	font-family: 'Noto Sans', sans-serif;
+	margin-top: 30px;
+}
+
+.selected-courses td img {
+	padding: 10px;
+}
+
+.selected-courses td {
+	text-align: center;
+}
+
+#names td {
+	border: 1px solid black;
+	background: #EEEEEE;
+}
+
+#print {
+	font-family: 'Noto Sans', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+	display: block;
+}
+
+.selected-courses #final {
+	background-color: white;
+	border: none;
+	padding: 10px;
+}
+
+.prep {
+	font-family: 'Noto Sans', san-serif;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.prep td {
+	padding: 20px;
+}
+
+.prep img {
+	width: 200px;
+	height: 100px;
+}
