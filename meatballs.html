@@ -19,28 +19,20 @@
 		</div>
 		
 		<div class="sidebar">
-			<div id="exampleView">
+			<div class="exampleView">
 				<h4>My Dinner</h4>
 				<p>People</p>
 				<input type="number" id="numberOfGuests" name="guests" min="1" max="10">
-			</div>
 			
-			<table>
-				<thead>
-					<th>Dish Name</th>
-					<th>Cost</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Pending</td>
-						<td>77.20</td>
-					</tr>
-					<tr id="last-row">
-						<td></td>
-						<td>SEK 77.20</td>
-					</tr>
-				</tbody>
-			</table>
+				<table>
+					<thead>
+						<th>Dish Name</th>
+						<th>Cost</th>
+					</thead>
+					<tbody id="menuSoFar">
+					</tbody>
+				</table>
+			</div>
 			
 			<button class="btn" id="confirm" disabled>Confirm Dinner</button>
 		</div>
@@ -56,7 +48,7 @@
 			</div>
 			
 			<div class="ingredients">
-				<h4>INGREDIENTS FOR 4 PEOPLE</h4>
+				<h4 id="somethingElse">INGREDIENTS FOR <span id="numberOfGuests"></span> PEOPLE</h4>
 				<br>
 				<table class="table">
 					<tbody id="ingredientList">
@@ -64,7 +56,7 @@
 				</table>
 				<br>
 				<button class="btn">Confirm Dish</button>
-				<p>SEK 77.20</p>
+				<p>SEK <span id="totalCost"></span></p>
 			</div>
 		</div>
 		
@@ -79,6 +71,8 @@
 		<script src="js/view/exampleView.js"></script>
 		<script src="js/view/selectView.js"></script>
 		<script src="js/view/dishView.js"></script>
+		<script src="js/view/prepView.js"></script>
+		<script src="js/view/overView.js"></script>
 		<!--script src="js/view/exampleViewController.js"></script-->
 		
 	</body>

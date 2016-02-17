@@ -22,26 +22,19 @@
 			<h4>My Dinner</h4>
 			<p>People</p>
 			
-			<div id="exampleView">
+			<div class="exampleView">
 				<input type="number" name="guests" id="numberOfGuests" min="1" max="10">
-			</div>
 			
-			<table>
-				<thead>
-					<th>Dish Name</th>
-					<th>Cost</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Pending</td>
-						<td>0.00</td>
-					</tr>
-					<tr id="last-row">
-						<td></td>
-						<td>SEK 0.00</td>
-					</tr>
-				</tbody>
-			</table>
+			
+				<table>
+					<thead>
+						<th>Dish Name</th>
+						<th>Cost</th>
+					</thead>
+					<tbody id="menuSoFar">
+					</tbody>
+				</table>
+			</div>
 			
 			<button class="btn" id="confirm" disabled>Confirm Dinner</button>
 		</div>
@@ -54,6 +47,8 @@
 				<button class="btn">Search</button>
 				<select>
 					<option>Main</option>
+					<option>Starter</option>
+					<option>Dessert</option>
 				</select>
 			</div>
 			

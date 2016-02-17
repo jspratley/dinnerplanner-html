@@ -1,6 +1,10 @@
 var DishView = function(container, model) {
 	this.dishDescription = container.find(".selected");
 	this.dishIngredients = container.find("#ingredientList");
+	this.totalDishCost = container.find("#totalCost");
+	this.numPeople = container.find("#numberOfGuests");
+	
+	this.numPeople.html(model.getNumberOfGuests());
 	
 	this.dish = model.getDish(100);
 	
@@ -12,4 +16,6 @@ var DishView = function(container, model) {
 		var newRow = this.dishIngredients.append("<tr>");
 		newRow.append("<td>" + this.dish.ingredients[i].quantity + "</td><td>" + this.dish.ingredients[i].unit + "</td><td>" + this.dish.ingredients[i].name + "</td><td>SEK</td><td>" + this.dish.ingredients[i].price + "</td>");
 	}
+	
+	this.totalDishCost.html(model.getTotalMenuPrice());
 }
