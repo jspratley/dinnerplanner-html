@@ -7,4 +7,5 @@ $(function() {
 	var selectView = new SelectView($("#dishSelection"), model);
 	var dishView = new DishView($(".selected-container"), model);
 	var prepView = new PrepView($(".prep"), model);
+	var overView = new OverView($(".selected-courses"), model);
 });
