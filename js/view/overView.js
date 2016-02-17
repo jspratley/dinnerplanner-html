@@ -22,4 +22,22 @@ var OverView = function(container, model) {
 	this.costRow.append("<td>180.60 SEK</td>");
 	this.costRow.append("<td>83.40 SEK</td>");
 	this.costRow.append("<td>341.20 SEK</td>");
+	
+	//Below is the code that will actually be used when the dinners are selected
+	//this.selectedDishes = model.getFullMenu;
+	//
+	//this.imageRow = this.overviewTable.append("<tr>");
+	//for (var i = 0; i < this.selectedDishes.length; i++) {
+	//	this.imageRow.append("<td><img src='images/" + this.selectedDishes[i].image + "'/></td>");
+	//}
+	//
+	//this.nameRow = this.overviewTable.append("<tr>");
+	//for (var i = 0; i < this.selectedDishes.length; i++) {
+	//	this.nameRow.append("<td>" + this.selectedDishes[i].name + "</td>");
+	//}
+	
+	//this.costRow = this.overviewTable.append("<tr>");
+	//for (var i = 0; i < this.selectedDishes.length; i++) {
+	//	this.costRow.append("<td>" + write function for dish cost? + "</td>");	
+	//}
 }
