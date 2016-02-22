@@ -1,4 +1,4 @@
-var DishView = function(container, model) {
+var DishView = function(container, model, id) {
 	this.dishDescription = container.find(".selected");
 	this.dishIngredients = container.find("#ingredientList");
 	this.totalDishCost = container.find("#totalCost");
@@ -6,7 +6,7 @@ var DishView = function(container, model) {
 	
 	this.numPeople.html(model.getNumberOfGuests());
 	
-	this.dish = model.getDish(100);
+	this.dish = model.getDish(id);
 	
 	this.dishDescription.append("<h3>" + this.dish.name + "</h3>");
 	this.dishDescription.append("<img src='images/" + this.dish.image + "'/>");

@@ -13,14 +13,96 @@
 
   </head>
   <body>
-		<div id="main">
-			<div class="header" id="header">
-				<h1>HOMELETTE</h1>
-				<h4>From the best chefs in the world directly into your kitchen</h4>
+		<div class="header" id="header">
+			<h1>HOMELETTE</h1>
+			<h4>From the best chefs in the world directly into your kitchen</h4>
+		</div>
+		
+		<!--The HTML that handles the home page-->
+		<div class="createDinner">
+			<h3>A Home Dinner Service</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div id='start'>
+				<p>Start quickly</p>
+				<button id='startDinner' class='btn'>Create new dinner</button>
+			</div>
+		</div>
+		
+		<!--The HTML that handles the sidebar-->
+		<div class="sidebar">
+			<h4>My Dinner</h4>
+			<p>People</p>
+			
+			<div class="navView">
+				<input type="number" name="guests" id="numberOfGuests" min="1" max="10">
+			
+			
+				<table>
+					<thead>
+						<th>Dish Name</th>
+						<th>Cost</th>
+					</thead>
+					<tbody id="menuSoFar">
+					</tbody>
+				</table>
 			</div>
 			
-			<div class="createDinner">
+			<button class="btn" id="confirm">Confirm Dinner</button>
+		</div>
+		
+		<div class="dish-container">
+			<div class="selection">
+				<h4>SELECT DISH</h4>
+				<br>
+				<input type="text">
+				<button class="btn">Search</button>
+				<select>
+					<option>Main</option>
+					<option>Starter</option>
+					<option>Dessert</option>
+				</select>
 			</div>
+			
+			<table>
+				<tbody id="dishSelection">
+				</tbody>
+			</table>
+			
+		</div>
+		
+		<div class="selected-container">
+		
+			<div class="selected">
+				<button class="btn">Back to Select Dish</button>
+			</div>
+			
+			<div class="ingredients">
+				<h4 id="somethingElse">INGREDIENTS FOR <span id="numberOfGuests"></span> PEOPLE</h4>
+				<br>
+				<table class="table">
+					<tbody id="ingredientList">
+					</tbody>
+				</table>
+				<br>
+				<button class="btn">Confirm Dish</button>
+				<p>SEK <span id="totalCost"></span></p>
+			</div>
+		</div>
+		
+		<div class="subheader">
+			<h2>My Dinner: <span id="numGuests"></span> people</h2>
+			<button class="btn">Go back and edit dinner</button>
+		</div>
+		
+		<div id="dinnerOverview">
+			<table class="selected-courses">
+				<tbody id="overviewTable">
+				</tbody>
+			</table>
+			
+			<br>
+			
+			<button class="btn" id="print">Print Full Recipe</button>
 		</div>
 
 		<!-- jQuery -->
@@ -33,5 +115,12 @@
 		<script src="js/model/dinnerModel.js"></script>
 		<script src="js/view/homeView.js"></script>
 		<script src="js/view/homeViewController.js"></script>
+		<script src="js/view/navView.js"></script>
+		<script src="js/view/navViewController.js"></script>
+		<script src="js/view/selectView.js"></script>
+		<script src="js/view/selectViewController.js"></script>
+		<script src="js/view/dishView.js"></script>
+		<script src="js/view/prepView.js"></script>
+		<script src="js/view/overView.js"></script>
   </body>
 </html>
