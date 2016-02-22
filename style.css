@@ -143,6 +143,10 @@ body {
 	height: 300px;
 }
 
+.selected p {
+	margin-top: 10px;
+}
+
 .ingredients {
 	float: right;
 	background-color: #FFE599;
@@ -166,6 +170,7 @@ body {
 .subheader {
 	background-color: #FFE599;
 	margin-top: none;
+	margin-bottom: none;
 	height: 75px;
 	border-bottom: 1px solid black;
 }
@@ -200,7 +205,7 @@ body {
 	text-align: center;
 }
 
-#names td {
+.names {
 	border: 1px solid black;
 	background: #EEEEEE;
 }

@@ -12,7 +12,7 @@ var NavView = function (container, model) {
 		for (var i = 0; i < model.getFullMenu().length; i++) {
 			this.dishRow = this.menuSoFar.before("<tr>");
 			this.dishRow.append("<td>" + model.getFullMenu()[i].name + "</td>");
-			this.dishRow.append("<td>" + model.getTotalMenuPrice() + "</td>");
+			this.dishRow.append("<td>" + model.getDishPrice(model.getFullMenu()[i].id) + "</td>");
 		}
 		this.confirmButton.prop('disabled', false);
 	} else {

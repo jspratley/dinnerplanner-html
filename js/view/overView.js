@@ -13,7 +13,7 @@ var OverView = function(container, model) {
 	
 	this.nameRow = this.overviewTable.append("<tr>");
 	for (var i = 0; i < this.selectedDishes.length; i++) {
-		this.nameRow.append("<td>" + this.selectedDishes[i].name + "</td>");
+		this.nameRow.append("<td class='names'>" + this.selectedDishes[i].name + "</td>");
 	}
 	this.nameRow.append("<td>Total:</td>");
 	

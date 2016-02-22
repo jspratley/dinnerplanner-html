@@ -17,6 +17,7 @@ var HomeView = function(container, model) {
 	$('.subheader').hide();
 	$('#dinnerOverview').hide();
 	$('.selected-container').hide();
+	$('.prep').hide();
 	
 	this.createDinnerButton = container.find("#startDinner");
 	

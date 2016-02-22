@@ -110,10 +110,22 @@ var DinnerModel = function() {
 		
 		return allIngredients;
 	}
+	
+	//Returns the price of one dish
+	this.getDishPrice = function(id) {
+		var priceForIngredients = 0;
+		var dish = this.getDish(id);
+		
+		for (ingredientIndex = 0; ingredientIndex < dish.ingredients.length; ingredientIndex++) {
+			priceForIngredients += dish.ingredients[ingredientIndex].price;
+		}
+		
+		return priceForIngredients * numberOfGuests;
+	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
 	this.getTotalMenuPrice = function() {
-		priceForIngredients = 0;
+		var priceForIngredients = 0;
 		
 		for (dishIndex = 0; dishIndex < selectedDishes.length; dishIndex++) {
 			currDishIngredients = selectedDishes[dishIndex].ingredients;
